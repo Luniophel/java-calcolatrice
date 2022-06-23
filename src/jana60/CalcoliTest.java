@@ -39,7 +39,24 @@ public class CalcoliTest {
 		System.out.println(CalcoliHelper.whoMin(47, 32));	// num1 > num2
 		System.out.println(CalcoliHelper.whoMax(32, 47));	// num1 < num2
 		System.out.println(CalcoliHelper.whoMax(5, 5));	// num1 = num2
-
+		
+		
+		System.out.println(CalcoliHelper.sum(10.00, 52.00));	//Test del metodo che somma parametri double
+		
+		/* Il principio della programmazione ad oggetti che sfrutta la possibilità di scrivere lo stesso metodo
+		 * per tipi di parametri diversi viene detto POLIMORFISMO. 
+		 */
+		
+		//Test del metodo che calcola il valore di un numero elevato a potenza
+		System.out.println("\n______Calcolo Potenze______");
+		
+		System.out.println(CalcoliHelper.power(5, 3));	//Base positiva, esponente positivo
+		System.out.println(CalcoliHelper.power(-5, 3));	//Base negativa, esponente positivo	pari
+		System.out.println(CalcoliHelper.power(-5, 3));	//Base negativa, esponente positivo dispari
+		
+		System.out.println(CalcoliHelper.power(5, -3));	//Base positiva, esponente negativo
+		System.out.println(CalcoliHelper.power(-5, -3));	//Base negativa, esponente negativo	pari
+		System.out.println(CalcoliHelper.power(-5, -3));	//Base negativa, esponente negativo dispari
 
 		
 	}

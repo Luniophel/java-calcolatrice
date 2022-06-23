@@ -76,6 +76,8 @@ public class CalcoliHelper {
 		}
 	}
 
+	
+	
 	//Metodi per Double
 	public static double sum(double num1, double num2) 
 	{
@@ -143,4 +145,16 @@ public class CalcoliHelper {
 		}
 	}
 
+	
+	
+	//Metodo Bonus2
+	public static int power(int base, int exponent)
+	{
+		int result = base;
+		for (int i=1; i<CalcoliHelper.absolute(exponent); i++)
+		{
+			result *= base;
+		}
+		return result;
+	}
 }
