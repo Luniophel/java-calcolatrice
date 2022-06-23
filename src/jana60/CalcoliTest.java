@@ -50,13 +50,15 @@ public class CalcoliTest {
 		//Test del metodo che calcola il valore di un numero elevato a potenza
 		System.out.println("\n______Calcolo Potenze______");
 		
-		System.out.println(CalcoliHelper.power(5, 3));	//Base positiva, esponente positivo
-		System.out.println(CalcoliHelper.power(-5, 3));	//Base negativa, esponente positivo	pari
-		System.out.println(CalcoliHelper.power(-5, 3));	//Base negativa, esponente positivo dispari
+		System.out.println(CalcoliHelper.power(5, 1));		//Base positiva, esponente positivo
+		System.out.println(CalcoliHelper.power(-5, 2));		//Base negativa, esponente positivo	pari
+		System.out.println(CalcoliHelper.power(-5, 3));		//Base negativa, esponente positivo dispari
 		
-		System.out.println(CalcoliHelper.power(5, -3));	//Base positiva, esponente negativo
-		System.out.println(CalcoliHelper.power(-5, -3));	//Base negativa, esponente negativo	pari
+		System.out.println(CalcoliHelper.power(5, -1));		//Base positiva, esponente negativo
+		System.out.println(CalcoliHelper.power(-5, -2));	//Base negativa, esponente negativo	pari
 		System.out.println(CalcoliHelper.power(-5, -3));	//Base negativa, esponente negativo dispari
+		
+		System.out.println(CalcoliHelper.power(0, 0));		//Base ed Esponente uguali a 0, segnala valore indefinito con 1
 
 		
 	}

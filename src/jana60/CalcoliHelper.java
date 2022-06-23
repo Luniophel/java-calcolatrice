@@ -148,12 +148,31 @@ public class CalcoliHelper {
 	
 	
 	//Metodo Bonus2
-	public static int power(int base, int exponent)
+	public static double power(int base, int exponent)
 	{
-		int result = base;
+		double result = base;
+		boolean expIsNegative = false;	//Segnala se l'esponente è positivo o negativo
+		
 		for (int i=1; i<CalcoliHelper.absolute(exponent); i++)
 		{
-			result *= base;
+			if(exponent > 0)
+			{
+				result *= base;
+			}
+			else if(exponent < 0)
+			{
+				result *= base;
+				expIsNegative = true;
+			}
+			else
+			{
+				result = 1;
+			}
+		}
+		
+		if(expIsNegative)
+		{
+			result = 1 / result;
 		}
 		return result;
 	}
