@@ -44,7 +44,7 @@ public class CalcoliTest {
 		System.out.println(CalcoliHelper.sum(10.00, 52.00));	//Test del metodo che somma parametri double
 		
 		/* Il principio della programmazione ad oggetti che sfrutta la possibilità di scrivere lo stesso metodo
-		 * per tipi di parametri diversi viene detto POLIMORFISMO. 
+		 * per tipi di parametri diversi viene detto OVERLOAD. 
 		 */
 		
 		//Test del metodo che calcola il valore di un numero elevato a potenza
@@ -59,8 +59,7 @@ public class CalcoliTest {
 		System.out.println(CalcoliHelper.power(-5, -3));	//Base negativa, esponente negativo dispari
 		
 		System.out.println(CalcoliHelper.power(0, 0));		//Base ed Esponente uguali a 0, segnala valore indefinito con 1
-
-		
+	
 	}
 
 }

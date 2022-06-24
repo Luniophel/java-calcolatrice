@@ -146,7 +146,6 @@ public class CalcoliHelper {
 	}
 
 	
-	
 	//Metodo Bonus2
 	public static double power(int base, int exponent)
 	{
@@ -176,4 +175,5 @@ public class CalcoliHelper {
 		}
 		return result;
 	}
+
 }
