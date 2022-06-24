@@ -151,28 +151,25 @@ public class CalcoliHelper {
 	{
 		double result = base;
 		boolean expIsNegative = false;	//Segnala se l'esponente è positivo o negativo
-		
+
 		for (int i=1; i<CalcoliHelper.absolute(exponent); i++)
 		{
 			if(exponent > 0)
-			{
 				result *= base;
-			}
-			else if(exponent < 0)
+			
+			else // Valore 0 non compreso, in quanto per exponent = 0 la funzione non entra nel ciclo
 			{
 				result *= base;
 				expIsNegative = true;
 			}
-			else
-			{
-				result = 1;
-			}
+
 		}
+		if(exponent == 0)
+			result = 1;
 		
 		if(expIsNegative)
-		{
 			result = 1 / result;
-		}
+		
 		return result;
 	}
 
